@@ -21,6 +21,7 @@ using std::vector;
 using std::for_each;
 using std::list;
 using std::replace_if;
+using std::sort;
 
 //?
 bool BSort(int first, int second){      //argument for reverce output
@@ -120,6 +121,8 @@ int main() {
     for(int i = 0; i < vect.size(); ++i){
         vecr[i] = vect[i];
     }
+    
+    sort(vecr.begin(), vecr.end());
     cout << "Sorted vector: ";
     for_each(vecr.begin(), vecr.end(), VecOut);
     cout << endl;
